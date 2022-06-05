@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+:root{
+    font-size: 62.5%;
+}
+body {
+    background-image: url("img/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    
+    
+}
+
+.entrar{
+    position: absolute;
+    
+    display: inline-block;
+    padding: 1rem 0.6rem;
+    background-color: #1A2023;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border: 1.5px solid white;
+    border-radius: 0.3rem;
+    top: 1.6rem;
+    right: 3.2rem;
+    position: fixed;
+}
+.entrar:hover{
+    background: #F9F9F9;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    top: 40rem;
+    
+    }
+    
+ img.franquias{
+  max-width: 100%; 
+  
+  margin-bottom: 1rem;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    
+}
+img.logo{
+    max-width: 50%;
+    margin-bottom: 4rem;
+}
+
+a.assine{
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    
+    background-color: #6421FF;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .6rem;
+    border: 1px solid black;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+a.assine:hover{
+    background: #662bff;
+    font-size: .1rem;
+    transition: 0.2s ease;
+}
+
+.links a, span{
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+
+
+@media (max-width: 705px){
+    body {
+        background-size: contain;
+        
+    }
+    
+    a.entrar{
+        top: 1rem;
+        right: 2rem;
+        padding: 1rem 0.9rem;
+    }
+    
+    .container{
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    top: 20rem;
+    text-align: center;
+    }
+    
+    .container h1{
+        
+        font-size: 2.4rem;
+    }
+    
+    img.logo{
+        margin-bottom: 2rem;
+    }
+    
+    a.assine{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    font-size: 1rem;
+    
+    }
+    
+    a.assine:hover{
+        font-size: .8rem;
+    }
+    
+    .links{
+        font-size: 1.8rem;
+        letter-spacing: 0;
+        
+    }
+    
+    .links a{
+        font-size: 1.2rem;
+    }
+}
+
+/*Para celular com menos de 412 de largura*/
+@media(max-width: 412px){
+
+    a.entrar{
+        padding: .6rem .5rem;
+        
+        right: 1rem;
+    }
+    
+     .container h1{
+        
+        font-size: 2rem;
+    }
+    
+     a.assine{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+      
+    }
+    
+    .links{
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        
+    }
+    
+    .links a{
+        font-size: .9rem;
+    }
+}
